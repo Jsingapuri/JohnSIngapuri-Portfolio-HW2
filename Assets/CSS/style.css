@@ -1,0 +1,188 @@
+/*This establishes the border of the webapage, along with the font, and color of the webpage */
+body {
+  margin: 1px;
+  padding: 1px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #db3742;
+}
+/*This establishes the color of the header, its size, and where the content inside it should be*/
+header {
+  background-color: #dbd637;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/*This establishes the size and color of the heading inside the header*/
+header h1 {
+  color: #374ddb;
+  font-size: 400%;
+  text-shadow: 5px 5px 10px #db3742;
+  transform: rotate(-5deg);
+}
+/*This establishes the styling for the nav buttons inside the header*/
+header nav button {
+  background-color: #374ddb;
+  padding: 5px 10px;
+  transform: rotate(19deg);
+  box-shadow: 5px 5px 10px #db3742;
+  padding: 5px 10px;
+  margin-left: 25px;
+  padding-top: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/*This establishes the font styling for the bottons*/
+header nav button a {
+  text-decoration: none;
+  color: #dbd637;
+  font-weight: bolder;
+}
+/*This establishes the image under the header, its size, location, 
+and where the content will be inside it*/
+.rock {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  color: #374ddb;
+}
+/*This establishes the about me section of the webpage*/
+.full-page {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+/*This establishes the layouts and how they should react to movement in the webpage*/
+.content-section {
+  margin: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+/*This establishes the location and effects of the h2 associated tot he content*/
+.content-section h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin: auto;
+  font-size: 40px;
+  color: #dbd637;
+  transform: skew(30deg);
+}
+/*This establishes the location the content should be on the webpage, its size,
+and how it will react to the size of the webpage shifting*/
+.content-section div {
+  float: center;
+  flex: 0 0 75%;
+  }
+/*This establishes how much space should be between the ending of the p section
+and the next area of content along with the text color*/
+.content-section p {
+  margin-bottom: 20px;
+  color:#dbd637; 
+  }
+/*This establishes how the sections under surf report will fit on the page*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+/*This establishes the size of the content area, content insde it will appear*/
+.flex-item {
+  color: #0072bb;
+  min-height: 150px;
+  max-height: 150px;
+  width: 45%;
+  display: inline-flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 10px;
+  text-decoration: none;
+  background-size: 150%;
+  font-size: 15px;
+  background-image: url("https://digital-photography-school.com/wp-content/uploads/flickr/3452627819_0a03c2fe98_o.jpg");
+  }
+/*This establishes how the surf content will be differnet from the rest of the content*/
+.flex-item:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+/*This establishes the */
+footer {
+  font-size: 20px;
+  padding: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+/*Media stuff goes at the end*/
+/*This area changes how the sections of the webpage will react to changes in screen size*/
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  
+  header nav button {
+    justify-content: center;
+  }
+  
+  .content-section h2,
+  .content-section div {
+    flex: 0 0 100%;
+  }
+  
+  .content-section h2 {
+    border-right: none;
+    border-bottom: 4px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 50px;
+  }
+}
+  
+@media screen and (max-width: 768px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+  
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+  
+  .rock {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+  
