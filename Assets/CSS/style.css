@@ -97,6 +97,10 @@ and the next area of content along with the text color*/
   color:#dbd637; 
   }
 /*This establishes how the sections under surf report will fit on the page*/
+.flex-item:hover {
+  font-size: 40px;
+  transform: rotate(20deg);
+}
 .flex-container {
   display: flex;
   flex-wrap: wrap;
