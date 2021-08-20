@@ -126,6 +126,31 @@ and the next area of content along with the text color*/
   min-height: 400px;
   flex-basis: 100%;
 }
+#Dinner {
+  background-image: url("https://www.monroestreetmarket.com/wp-content/uploads/2016/08/Dinner-A-Movie-Cropped2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#Passwords {
+  background-image: url("https://www.channelfutures.com/files/2019/01/Password-877x432.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#Quiz {
+  background-image: url("https://d1ymz67w5raq8g.cloudfront.net/Pictures/780xany/6/5/5/509655_shutterstock_1506580442_769367.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#Planner {
+  background-image: url("https://miro.medium.com/max/1400/1*avB02xeveXeR1iO3gfjQxQ.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#Weather {
+  background-image: url("https://dv-website.s3.amazonaws.com/uploads/2019/05/jz_csweather_060619.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /*This establishes the */
 footer {
   font-size: 20px;
